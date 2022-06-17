@@ -13,7 +13,7 @@ export default function Home() {
 
       <main>
         <h1>Hello to Static site generation next app</h1>
-        <Link href='/products'>Products</Link>
+        <Link href='/posts'>Posts</Link>
       </main>
     </div>
   )
