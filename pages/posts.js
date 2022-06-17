@@ -20,7 +20,7 @@ const Posts = ({ data }) => {
 
 export const getStaticProps = async () => {
   const { data } = await axios.get('https://creativepeoples.xyz/projects/wp-rest/wp-json/wp/v2/posts')
-  return { props: { data } }
+  return { props: { data }, revalidate: 10 }
 }
 
 export default Posts
